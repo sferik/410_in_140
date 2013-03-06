@@ -26,3 +26,15 @@ There is currently only one spec, which verifies that the size of server.rb is
 less than or equal to 140 characters.
 
 	rspec spec.rb
+
+FAQ
+---
+> Are you serious?
+
+No, not particularly. [I was trying to be funny][tweet], but [someone
+replied][judofyr] that my code wasn't up to [spec][]. This repo exists mostly
+to give the haters and nitpickers a place to constructively pick nits.
+
+[tweet]: https://twitter.com/sferik/status/309207114050568192
+[judofyr]: https://twitter.com/judofyr/status/309235306547273728
+[spec]: http://www.ietf.org/rfc/rfc2616.txt
