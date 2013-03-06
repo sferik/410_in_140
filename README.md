@@ -11,6 +11,22 @@ characters (or less), so it fits in a Tweet.
 
 [sadness]: https://dev.twitter.com/blog/planning-for-api-v1-retirement
 
+Life is short. Don't make me click. Just show me the code!
+----------------------------------------------------------
+Okay.
+
+```ruby
+require 'socket';
+s = TCPServer.new(80);
+loop {
+	Thread.start(s.accept){|c|
+		c.gets "\n\n";
+		c.puts "HTTP/1.1 410 Gone\r";
+		c.close
+	}
+}
+```
+
 Running the server
 ------------------
 	sudo ruby server.rb
