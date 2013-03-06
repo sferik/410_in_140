@@ -19,3 +19,10 @@ Running the server
 root on a Unix-like operating systems, you will get the error:
 
 	server.rb:2:in `initialize': Permission denied - bind(2) (Errno::EACCES)
+
+Running the specs
+-----------------
+There is currently only one spec, which verifies that the size of server.rb is
+less than or equal to 140 characters.
+
+	rspec spec.rb
