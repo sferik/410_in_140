@@ -54,3 +54,15 @@ to give the haters and nitpickers a place to constructively pick nits.
 [tweet]: https://twitter.com/sferik/status/309207114050568192
 [judofyr]: https://twitter.com/judofyr/status/309235306547273728
 [spec]: http://www.ietf.org/rfc/rfc2616.txt
+
+> I thought this was Ruby. What's up with the semicolons?
+
+You must be confusing Ruby with [JavaScript][]. :trollface:
+
+[javascript]: https://github.com/twitter/bootstrap/issues/3057
+
+> No, seriously. Why use semicolons if you're trying to keep it short?
+
+Many Twitter, including Twitter's official web client, strip out newline
+characters when rendering Tweet text. The semicolons add a few extra characters
+but ensure that the code can be copied and run from any Twitter client.
