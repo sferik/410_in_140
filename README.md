@@ -45,15 +45,27 @@ less than or equal to 140 characters.
 
 FAQ
 ---
+> How many requests per second?
+
+LOL!
+
 > Are you serious?
 
 No, not particularly. [I was trying to be funny][tweet], but [someone
 replied][judofyr] that my code wasn't up to [spec][]. This repo exists mostly
-to give the haters and nitpickers a place to constructively pick nits.
+to give the haters and nitpickers a place to be constructive.
 
 [tweet]: https://twitter.com/sferik/status/309207114050568192
 [judofyr]: https://twitter.com/judofyr/status/309235306547273728
 [spec]: http://www.ietf.org/rfc/rfc2616.txt
+
+> Most [Ruby styleguides][styleguide] call for two space indentation. Why do
+> you use tabs?
+
+I'm using tabs to keep the character count below 140. I suppose I could have
+used single spaces instead but that looked worse to me.
+
+[styleguide]: https://github.com/styleguide/ruby
 
 > I thought this was Ruby. What's up with the semicolons?
 
@@ -63,6 +75,6 @@ You must be confusing Ruby with [JavaScript][]. :trollface:
 
 > No, seriously. Why use semicolons if you're trying to keep it short?
 
-Many Twitter, including Twitter's official web client, strip out newline
-characters when rendering Tweet text. The semicolons add a few extra characters
-but ensure that the code can be copied and run from any Twitter client.
+Many Twitter clients strip out newline characters when rendering Tweet text.
+The semicolons add a few extra characters but ensure that the code can be
+copied and run from any Twitter client.
