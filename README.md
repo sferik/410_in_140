@@ -1,15 +1,14 @@
 410 in 140
 ==========
-A Twitter API v1 server implemented in 140 characters (or less).
+A Twitter API v1 server in 140 characters
 
 Motivation
 ----------
-On March 5, 2013, [Twitter deprecated version 1 of their API][sadness]. At some
-unspecified time in the future, API v1 requests will start returning `HTTP 410
-Gone`. This project aims to implement a multithreaded web server for this
-endpoint in 140 characters (or less), so it fits in a Tweet.
+On June 11, 2013, [all requests to Twitter API v1 will return `HTTP 410
+Gone`][final-countdown]. This project aims to implement a multithreaded web
+server for this endpoint in 140 characters (or less), so it fits in a Tweet.
 
-[sadness]: https://dev.twitter.com/blog/planning-for-api-v1-retirement
+[final-countdown]: https://dev.twitter.com/blog/api-v1-retirement-date-extended-to-june-11
 
 Life is short. Don't make me click. Just show me the code!
 ----------------------------------------------------------
@@ -31,8 +30,8 @@ Running the server
 ------------------
 	sudo ruby server.rb
 
-**Note**: Must be run as root since it binds to port 80. If it's not run as
-root on a Unix-like operating systems, you will get the error:
+**Note**: Must be run as `root`, since it binds to port 80. If it's not run as
+`root` on a Unix-like operating system, you will get the error:
 
 	server.rb:2:in `initialize': Permission denied - bind(2) (Errno::EACCES)
 
